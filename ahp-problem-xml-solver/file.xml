@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ahp>
+  <goal>
+    <name>wakacje 2019</name>
+  </goal>
+  <alternatives>
+    <alternative>
+      <name>polska</name>
+      <id>1</id>
+    </alternative>
+    <alternative>
+      <name>hiszpania</name>
+      <id>2</id>
+    </alternative>
+    <alternative>
+      <name>tajlandia</name>
+      <id>3</id>
+    </alternative>
+    <alternative>
+      <name>chorwacja</name>
+      <id>4</id>
+    </alternative>
+  </alternatives>
+  <criteria>
+    <alt>4</alt>
+    <cri>1</cri>
+    <criterion>
+      <name>wakacje 2019</name>
+      <id>0</id>
+      <criteriamatrix>1.0 3.0 3.0 9.0 0.3333333333333333 1.0 1.0 3.0 0.3333333333333333 1.0 1.0 7.0 0.1111111111111111 0.3333333333333333 0.14285714285714285 1.0 </criteriamatrix>
+      <cri>4</cri>
+      <criterion>
+        <name>cena</name>
+        <id>1</id>
+        <criteriamatrix>1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 </criteriamatrix>
+        <cri>3</cri>
+        <criterion>
+          <name>cena noclegu</name>
+          <id>5</id>
+          <matrix>1.0 3.0 1.0 1.0 0.3333333333333333 1.0 0.3333333333333333 1.0 1.0 3.0 1.0 3.0 1.0 1.0 0.3333333333333333 1.0 </matrix>
+        </criterion>
+        <criterion>
+          <name>cena wyzywienia</name>
+          <id>6</id>
+          <matrix>1.0 1.0 1.0 3.0 1.0 1.0 1.0 5.0 1.0 1.0 1.0 1.0 0.3333333333333333 0.2 1.0 1.0 </matrix>
+        </criterion>
+        <criterion>
+          <name>cena atrakcji</name>
+          <id>7</id>
+          <matrix>1.0 1.0 3.0 3.0 1.0 1.0 3.0 3.0 0.3333333333333333 0.3333333333333333 1.0 1.0 0.3333333333333333 0.3333333333333333 1.0 1.0 </matrix>
+        </criterion>
+      </criterion>
+      <criterion>
+        <name>atrakcje</name>
+        <id>2</id>
+        <matrix>1.0 1.0 0.3333333333333333 1.0 1.0 1.0 1.0 1.0 3.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 </matrix>
+      </criterion>
+      <criterion>
+        <name>klimat</name>
+        <id>3</id>
+        <criteriamatrix>1.0 1.0 1.0 1.0 </criteriamatrix>
+        <cri>2</cri>
+        <criterion>
+          <name>temperatura</name>
+          <id>8</id>
+          <matrix>1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 </matrix>
+        </criterion>
+        <criterion>
+          <name>warunki pogodowe</name>
+          <id>9</id>
+          <matrix>1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 </matrix>
+        </criterion>
+      </criterion>
+      <criterion>
+        <name>odleglosc</name>
+        <id>4</id>
+        <matrix>1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 </matrix>
+      </criterion>
+    </criterion>
+  </criteria>
+</ahp>
