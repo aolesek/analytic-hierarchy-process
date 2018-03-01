@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="576.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlternativesController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="80.0" minHeight="80.0" prefHeight="80.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="AHP">
+                        <items>
+                              <MenuItem mnemonicParsing="false" onAction="#processXML" text="Generuj aktualny XML" />
+                              <MenuItem mnemonicParsing="false" onAction="#exitHandle" text="Zakończ" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Pomoc">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#showHelp" text="Pomoc" />
+                              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="O programie" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <Label layoutX="29.0" layoutY="38.0" text="Cel:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="30.0" />
+                  <TextField fx:id="goalTextField" layoutX="66.0" layoutY="34.0" onKeyReleased="#setGoalHandle" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="50.0" />
+                  <Label layoutX="199.0" layoutY="32.0" text="Maksymalne CR:" />
+                  <TextField fx:id="crField" layoutX="199.0" layoutY="50.0" onKeyReleased="#setCRHandle" text="0.1" AnchorPane.topAnchor="50.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="1.0" right="1.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane prefHeight="600.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="altList" layoutX="5.0" layoutY="5.0" onMouseClicked="#removeAlternativeHandle" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <tooltip>
+                        <Tooltip text="Kliknij na wybranej alternatywie aby usunąć." />
+                     </tooltip>
+                  </ListView>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addAltBtn" layoutX="433.0" layoutY="8.0" mnemonicParsing="false" onAction="#addAlternativeBtnHandle" text="Dodaj" AnchorPane.leftAnchor="410.0" AnchorPane.topAnchor="5.0" />
+                  <Button mnemonicParsing="false" onAction="#criteriaButtonHandle" text="Dalej" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                  <TextField fx:id="addAltField" layoutX="66.0" layoutY="-7.0" onKeyPressed="#addAlternativeKeyboardHandle" prefWidth="400.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
