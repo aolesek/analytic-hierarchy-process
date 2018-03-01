@@ -6,5 +6,5 @@ Program rozwiązuje problem wygenerowany przez AHPProblemXMLCreator. Wynikiem dz
 
 1. Plik wygenerowany przez AHPProblemXMLCreator umieścic w katalogu głównym, następnie uruchomić aplikację.
 ```
-gradle run
+$ gradle run
 ```

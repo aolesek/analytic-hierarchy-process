@@ -1,6 +1,10 @@
 # analytic-hierarchy-process
 
 Program pozwala na utworzenie pliku XML zawierającego opis problemu decyzyjnego według metody Analytic Hierarchy Process.
+Aby uruchomić:
+```
+$ gradle run
+```
 
 # instrukcja
 
